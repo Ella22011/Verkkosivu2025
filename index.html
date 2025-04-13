@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ella's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-rMGRmkQO8lQn60bM+zvgyZsYbXgaYcz/kj9MUS2pAVF7g0W7NQx4s6fnrH/AKv+kG9+aK2vklzNPIYkLu7Uv2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="images/favicon.ico" />
+</head>
+<body>
+  <header>
+    <div class="logo">Ella Heikkinen</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#artstation">Artstation</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero" data-aos="fade-left">
+      <div class="hero-image">
+        <img src="images/ella-hero.png" alt="Ella's Portrait" />
+      </div>
+      <div class="hero-text">
+        <h2>Hi! I'm Ella</h2>
+        <p>
+          A Business Information Technology student & creative soul: dancer, painter and crocheter. HÄTÄ ry and a RUN-EU student council member. I love helping people and bringing new perspectives—welcome to my world!
+        </p>
+        <a href="#projects" class="cta-button">View My Projects</a>
+      </div>
+    </section>
+
+    <section id="artstation" class="artstation" data-aos="zoom-in">
+      <iframe src="https://rottamuhennos.artstation.com/" width="100%" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section id="projects" class="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <p>Check out more on <a href="https://github.com/Ella22011" target="_blank" rel="noopener">GitHub</a>.</p>
+      <div class="project-list">
+        <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+          <h3>Power of Nine</h3>
+          <div class="image-box">
+          <img src="images/powerOfNineLogo.png" alt="Power of Nine Logo" />
+          </div>
+          <p>A 3-month game development course project where I focused on 2D art and learned 3D tools in Blender.</p>
+          <a href="https://github.com/Ella22011/SummerGameStudies24" target="_blank">View Project</a>
+        </div>
+        <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+          <h3>Harmony in the Wild</h3>
+          <div class="image-box">
+            <img src="images/hitwPortfolio.png" alt="Harmony in the Wild" />
+          </div>
+          <p>Created artwork and UI for Lumo Creations wholesome nature-themed game about a fox pup's journey.</p>
+          <a href="https://store.steampowered.com/app/3360850/Harmony_in_the_Wild/" target="_blank">View on Steam</a>
+        </div>        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/ella-heikkinen-38aa1a25b/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/rottamuhennos" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.artstation.com/rottamuhennos" target="_blank" aria-label="ArtStation">
+        <i class="fab fa-artstation"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Ella's Portfolio</p>
+    <button id="backToTop" title="Back to Top">↑</button>
+  </footer>
+  
+
+  <script>
+    AOS.init();
+
+    const btn = document.getElementById("backToTop");
+    window.onscroll = () => {
+      btn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    btn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+</body>
+</html>
